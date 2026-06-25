@@ -1,0 +1,20 @@
+body{
+    background-color: darkslategrey;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: grid;
+}
+/* Animation class triggered by JavaScript */
+.active-press {
+    transform: scale(0.92) !important; /* Slightly pushes the button inward */
+    filter: brightness(1.4) !important; /* Brightens the button background color */
+    transition: transform 0.05s ease, filter 0.05s ease;
+}
+
+/* Optional: Smooth transition reset for standard buttons */
+.num-button, .op-button, .btn {
+    transition: transform 0.1s ease, filter 0.1s ease;
+}
